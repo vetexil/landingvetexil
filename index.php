@@ -1,2 +1,7 @@
 <?php
-http_redirect('/404.png');
+
+include_once './controllers/ControllerMVC.php';
+
+$obj = new ControllerMVC();
+$obj->getHeaders();
+$obj->getBody();
